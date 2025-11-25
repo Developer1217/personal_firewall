@@ -5,35 +5,55 @@ A lightweight, real-time firewall built using Python and iptables, designed for 
 
 
 
-💡 Features
+💡 Features : 
+
 🔍 Real-time packet sniffing using Scapy
+
 🚫 Rule-based blocking of IPs, ports, and protocols
+
 🔐 Uses iptables for system-level blocking
+
 📋 Live log view of allowed and blocked packets
+
 🧠 Simple GUI to control start/stop and view logs
+
 🔄 JSON file to customize rules easily
 
 
 
 🛠️ Installation on Kali Linux
+
 Clone the repository:
+https://github.com/Developer1217/personal_firewall.git
 
 cd Personal-firewall
+
 Install Scapy (if not installed already):
+
 sudo apt update
+
 sudo apt install python3-pip -y
+
 pip3 install scapy
+
 Run the firewall GUI with root permission:
+
 sudo python3 main.py
 
 
 
 📂 File Structure
+
 main.py – GUI app to control and monitor the firewall
+
 firewall.py – Core packet inspection using Scapy
+
 iptables_blocker.py – Utility to block IPs or ports via iptables
+
 logger.py – Handles all logging
+
 rules.json – Define your firewall rules
+
 firewall_log.txt – Log file (created after first run)
 
 
